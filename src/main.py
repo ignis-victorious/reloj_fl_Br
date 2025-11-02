@@ -22,7 +22,7 @@ def main(page: Page) -> None:
 
     while True:
         hora.value = datetime.now().strftime(format="%H:%M:%S")
-        page.update()
+        page.update()  # type: ignore
 
 
 if __name__ == "__main__":
